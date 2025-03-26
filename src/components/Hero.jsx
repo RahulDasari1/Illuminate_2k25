@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import Logo from '../assets/logo.png';
+import Logo from '../assets/logo.svg';
 
 
 const Hero = () => {
-  const targetDate = new Date("2025-03-26T12:05:59").getTime();
+  const targetDate = new Date("2025-03-28T09:05:59").getTime();
   const [timeLeft, setTimeLeft] = useState(targetDate - new Date().getTime());
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,18 +27,20 @@ const Hero = () => {
   const { days, hours, minutes,seconds } = formatTime(timeLeft);
 
   return (
-    <div className="w-full h-dvh flex flex-col justify-center items-center">
-      <div className=" w-full  flex flex-col justify-center items-center">
+    <div id='/main' className="w-full xl:h-svh h-svh flex flex-col justify-center items-center">
+      <div className=" w-full flex flex-col justify-center items-center">
         <div className="" >
           <img className="w-200" src={Logo} alt="" />
         </div>
-        <div className="text-center text-5xl font-semibold">
+        <div className="text-center text-5xl xl:text-8xl font-semibold">
           {timeLeft > 0 ? (
             <>
-              <h1 className="shiny-text">{`${days} : ${hours} : ${minutes} : ${seconds}`}</h1>
+              <h1 className="shiny-text timer">{`${days} : ${hours} : ${minutes} : ${seconds}`}</h1>
             </>
           ) : (
-            "Time's up!"
+            <>
+            <h1 className="shiny-text" >00 : 00 : 00 : 00</h1>
+            </>
           )}
         </div>
       </div>
