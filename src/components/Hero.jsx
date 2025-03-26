@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Logo from '../assets/logo.svg';
+import Logo from '../../public/logo.svg'
 
 
 const Hero = () => {

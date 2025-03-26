@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { events } from '../assets/data/eventsList';
+import { events } from '../../data/eventsList';
 
 const Events = () => {
   return (
