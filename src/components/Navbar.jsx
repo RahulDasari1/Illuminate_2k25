@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { navLinks } from '../../data/navLinks';
 import { Link } from 'react-scroll';
-import EventLogo from '../../public/logo.svg';
-import CmrLogo from '../../public/image.svg'
+import EventLogo from '/logo.svg';
+import CmrLogo from '/image.svg'
 import { RiMenuFoldFill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';

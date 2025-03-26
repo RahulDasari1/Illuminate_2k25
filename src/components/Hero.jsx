@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import Logo from '../../public/logo.svg'
+import Logo from '/logo.svg'
 
 
 const Hero = () => {
-  const targetDate = new Date("2025-03-28T09:05:59").getTime();
+  const targetDate = new Date("2025-03-30T09:05:59").getTime();
   const [timeLeft, setTimeLeft] = useState(targetDate - new Date().getTime());
   useEffect(() => {
     const interval = setInterval(() => {
@@ -16,10 +16,10 @@ const Hero = () => {
 
   const formatTime = (milliseconds) => {
     const totalSeconds = Math.floor(milliseconds / 1000);
-    const days = Math.floor(totalSeconds / (24 * 3600));
-    const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
-    const minutes = Math.floor((totalSeconds % 3600) / 60);
-    const seconds = totalSeconds % 60;
+    const days = String(Math.floor(totalSeconds / (24 * 3600))).padStart(2, '0');
+    const hours = String(Math.floor((totalSeconds % (24 * 3600)) / 3600)).padStart(2, '0');
+    const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+    const seconds = String(totalSeconds % 60).padStart(2, '0');
 
     return { days, hours, minutes, seconds };
   };
@@ -27,7 +27,7 @@ const Hero = () => {
   const { days, hours, minutes,seconds } = formatTime(timeLeft);
 
   return (
-    <div id='/main' className="w-full xl:h-svh h-svh flex flex-col justify-center items-center">
+    <div className="w-full xl:h-svh h-svh flex flex-col justify-center items-center">
       <div className=" w-full flex flex-col justify-center items-center">
         <div className="" >
           <img className="w-200" src={Logo} alt="" />
@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="text-center text-5xl xl:text-8xl font-semibold">
           {timeLeft > 0 ? (
             <>
-              <h1 className="shiny-text timer">{`${days} : ${hours} : ${minutes} : ${seconds}`}</h1>
+              <h1 className="shiny-text">{`${days} : ${hours} : ${minutes} : ${seconds}`}</h1>
             </>
           ) : (
             <>

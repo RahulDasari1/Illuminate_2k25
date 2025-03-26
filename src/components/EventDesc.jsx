@@ -1,15 +1,15 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { events } from '../../data/eventsList';
+import { EVENTS} from '../../data/eventsList';
 
 
 
-const Event = () => {
+const EventDesc = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     const { id } = useParams();
-    const card = events.find((c) => c.id === id);
+    const card = EVENTS.find((c) => c.id === id);
     console.log(card.imgUrl)
   
     if (!card) return <h2>Card not found</h2>;
@@ -29,4 +29,4 @@ const Event = () => {
       </div>
     );
 }
-export default Event;
+export default EventDesc;

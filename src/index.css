@@ -14,8 +14,9 @@ html,body{
   font-family: "Lato", sans-serif;
 }
 .shiny-text {
-    background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
+    background: linear-gradient(90deg, #FEFEFE, #11D0F4, #00343A);
     background-size: 200% 200%;
+    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shiny 3s linear infinite;

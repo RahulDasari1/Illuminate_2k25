@@ -4,8 +4,8 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Events from './components/Events'
 import { Route, Routes } from 'react-router-dom'
-import Event from './components/Event'
 import Footer from './components/Footer'
+import EventDesc from './components/EventDesc'
 
 const App = () => {
   useEffect(() => {
@@ -22,7 +22,7 @@ const App = () => {
             <Events/>
           </>
         }/>
-        <Route path='/event/:id' element={<Event/>} />
+        <Route path='/event/:id' element={<EventDesc/>} />
       </Routes>
     <Footer/>
     </>
