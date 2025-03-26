@@ -1,6 +1,6 @@
 export const events = [
-    { id: "arts", imgUrl: "/public/events/arts_challenge.png", eventTitle: "Arts Challenge Event" },
-    { id: "bands", imgUrl: "/public/events/battle_of_bands.png", eventTitle: "Battle of Bands Event" },
+    { id: "arts", imgUrl: "events/arts_challenge.png", eventTitle: "Arts Challenge Event" },
+    { id: "bands", imgUrl: "events/battle_of_bands.png", eventTitle: "Battle of Bands Event" },
     { id: "code", imgUrl: "/public/events/code_red.png", eventTitle: "Code Red Event" },
     { id: "codethon", imgUrl: "/public/events/codethon.png", eventTitle: "Codethon Event" },
     { id: "dance", imgUrl: "/public/events/dance_war.png", eventTitle: "Dance War Event" },
