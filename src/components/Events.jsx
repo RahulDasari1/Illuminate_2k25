@@ -21,11 +21,11 @@ const Events = () => {
             }} className={`border-transparent border-b-[2px] cursor-pointer transform-all duration-500 ${events === "non-tech" ? 'border-white' : ''}`}>Non-Tech Events</p>
           </div>
         </div>
-        <div className='flex gap-15 shrink-0 flex-wrap justify-center items-center relative'>
+        <div className='flex gap-15 shrink-0 flex-wrap justify-center items-center relative overflow-hidden'>
           <div className={`transition-transform transform duration-500 ${events==='tech'?"translate-x-0":"-translate-x-full"}`} >
             <TechEvents/>
           </div>
-          <div className={` transition-transform transform duration-500 -translate-y-[104%] ${events==='non-tech'?"translate-x-0":"translate-x-full"}`} >
+          <div className={` transition-transform transform duration-500 absolute top-0 ${events==='non-tech'?"translate-x-0":"translate-x-full"}`} >
             <NonTechEvents/>
           </div>
         </div>
