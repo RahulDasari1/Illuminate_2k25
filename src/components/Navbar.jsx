@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import { navLinks } from '../../data/navLinks';
-import { Link } from 'react-scroll';
 import EventLogo from '/logo.svg';
 import CmrLogo from '/image.svg'
 import { RiMenuFoldFill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -29,7 +28,7 @@ const Navbar = () => {
       </NavLink>
       <div className='xl:flex lg:flex lg:gap-12 xl:gap-15 hidden' >
         {navLinks.map((e,i)=>(
-         <Link smooth={true} duration={500}  key={i} to={e.path}><p className=' hover:text-[#11D2F9] text-lg  transition-colors duration-300 cursor-pointer' >{e.text}</p></Link>
+         <a key={i} href={e.path}><p className=' hover:text-[#11D2F9] text-lg  transition-colors duration-300 cursor-pointer' >{e.text}</p></a>
         ))}
       </div>
       <div className='xl:hidden lg:hidden' >
@@ -47,9 +46,9 @@ const Navbar = () => {
       <h1 className='text-3xl' >Menu</h1>
       <div className='h-[1px] bg-white' ></div>
       {navLinks.map((e,i)=>(
-         <Link className={'w-fit'} key={i} to={e.path}><p onClick={()=>{
+         <a className={'w-fit'} key={i} href={e.path}><p onClick={()=>{
           setMenu(!menu);
-        }} className=' hover:text-[#11D2F9] text-2xl transition-colors duration-300 w-fit cursor-pointer' >{e.text}</p></Link>
+        }} className=' hover:text-[#11D2F9] text-2xl transition-colors duration-300 w-fit cursor-pointer' >{e.text}</p></a>
         ))}
       </div>
     </nav>

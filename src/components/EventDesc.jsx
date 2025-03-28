@@ -10,7 +10,6 @@ const EventDesc = () => {
     }, []);
     const { id } = useParams();
     const card = EVENTS.find((c) => c.id === id);
-    console.log(card.imgUrl)
   
     if (!card) return <h2>Card not found</h2>;
   
@@ -21,8 +20,8 @@ const EventDesc = () => {
            <div className="flex flex-wrap justify-center xl:gap-20 gap-10 pt-5" >
             <img className="w-90 rounded-lg"  src={card.imgUrl} alt="" />
             <div className="xl:w-1/2 px-10 xl:px-0" >
-            <p className="xl:text-lg" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt nemo iusto possimus distinctio? Mollitia quaerat, necessitatibus aliquam eos deleniti non. Porro illo eveniet temporibus atque, velit doloribus in voluptate? Voluptates!</p>
-            <Link to={'/'} ><button className="mt-3 px-4 py-2 bg-[#013239] text-xl rounded-lg hover:bg-[#13D1F5] hover:text-black transition-colors duration-400" >Register</button></Link>
+            <p className="xl:text-lg" >{card.desc}</p>
+            <Link to={card.register?card.register:"https://www.instagram.com/cmrit_illuminate"} ><button className="mt-3 px-4 py-2 bg-[#013239] text-xl rounded-lg hover:bg-[#13D1F5] hover:text-black transition-colors duration-400 cursor-pointer" >Register</button></Link>
             </div>
            </div>
         </div>
