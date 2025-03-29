@@ -3,7 +3,7 @@ import Logo from '/logo.svg'
 
 
 const Hero = () => {
-  const targetDate = new Date("2025-03-30T09:05:59").getTime();
+  const targetDate = new Date("2025-04-02T09:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(targetDate - new Date().getTime());
   useEffect(() => {
     const interval = setInterval(() => {
