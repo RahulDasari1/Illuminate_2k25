@@ -5,7 +5,7 @@ const Organizers = () => {
   const [anime, setAnime] = useState(null);
 
   return (
-    <div className="py-10 flex flex-col items-center">
+    <div id="organizers" className="py-10 flex flex-col items-center scroll-mt-20">
       <h1 className="text-3xl pb-15">Organizers</h1>
       <div className="flex flex-wrap xl:px-50 gap-15 justify-center">
         {ORGANIZERS.map((oranizer, id) => (
