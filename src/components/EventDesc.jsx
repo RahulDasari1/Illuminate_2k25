@@ -21,6 +21,13 @@ const EventDesc = () => {
             <img className="w-90 rounded-lg"  src={card.imgUrl} alt="" />
             <div className="xl:w-1/2 px-10 xl:px-0" >
             <p className="xl:text-lg" >{card.desc}</p>
+            <div className="py-1" >
+            {card.contact.map((e,i)=>(
+              <div key={i} className="py-1" >
+                <p className="text-lg" >{e.name} : {e.mobile_number}</p>
+              </div>
+            ))}
+            </div>
             <Link to={card.register?card.register:"https://www.instagram.com/cmrit_illuminate"} ><button className="mt-3 px-4 py-2 bg-[#013239] text-xl rounded-lg hover:bg-[#13D1F5] hover:text-black transition-colors duration-400 cursor-pointer" >Register</button></Link>
             </div>
            </div>
