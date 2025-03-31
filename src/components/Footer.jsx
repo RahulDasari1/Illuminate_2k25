@@ -6,7 +6,7 @@ import EventLogo from "/logo_.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-950 text-white xl:px-10 py-5 px-5">
+    <footer className="bg-[#00171f] text-white xl:px-10 py-5 px-5">
       <div className="border-white/80 border-b-2">
         <div className="xl:flex justify-between items-start xl:px-15">
           <div className="xl:w-2/5">

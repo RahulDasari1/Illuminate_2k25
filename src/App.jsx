@@ -6,6 +6,7 @@ import Events from './components/Events'
 import { Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer'
 import EventDesc from './components/EventDesc'
+import Sponsors from './components/Sponsors'
 
 const App = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const App = () => {
           <>
             <Hero/>
             <About/>
+            <Sponsors/>
             <Events/>
           </>
         }/>

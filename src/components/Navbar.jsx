@@ -39,7 +39,7 @@ const Navbar = () => {
           <RiMenuFoldFill size={35} />
         </span>
       </div>
-      <div className={`w-full h-screen bg-black flex flex-col gap-5 absolute top-0 right-0 transition-transform duration-300 ${menu?' translate-x-full ':''} p-10 `} >
+      <div className={`w-full h-screen bg-[#00171f] flex flex-col gap-5 absolute top-0 right-0 transition-transform duration-300 ${menu?' translate-x-full ':''} p-10 `} >
       <IoCloseSharp onClick={()=>{
         setMenu(!menu);
       }} className='absolute right-3 top-4' size={45} />
