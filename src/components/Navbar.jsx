@@ -21,7 +21,7 @@ const Navbar = () => {
     };
   }, [menu]);
   return (
-    <nav className='fixed py-2 top-0 bg-black z-1000 w-full lg:px-15 xl:px-20 md:px-15 px-5 flex gap-0 items-center justify-between shadow-2xl shadow-blue-400/20' >
+    <nav className='fixed py-2 top-0 bg-black z-1000 w-full lg:px-15 xl:px-20 md:px-15 px-5 flex gap-0 items-center justify-between shadow-2xl shadow-blue-400/20 transition-all duration-500' >
       <NavLink to={'/'} className='flex gap-2 items-center cursor-pointer'>
         <img className='w-15 md:w-20' src={CmrLogo} alt="" />
         <img className='w-45 md:w-50' src={EventLogo} alt="" />

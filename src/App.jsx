@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import EventDesc from './components/EventDesc'
 import Sponsors from './components/Sponsors'
 import Organizers from './components/Organizers'
+import Contact from './components/Contact'
 
 const App = () => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const App = () => {
             <Sponsors/>
             <Events/>
             <Organizers/>
+            <Contact/>
           </>
         }/>
         <Route path='/event/:id' element={<EventDesc/>} />

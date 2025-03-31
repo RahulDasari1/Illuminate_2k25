@@ -171,7 +171,7 @@ export const EVENTS = [
     imgUrl: "/events/lol_domains.png",
     eventTitle: "LOL Domains",
     eventType: "tech",
-    desc: "",
+    desc: "Code, design, and innovate! A high-energy web development contest where participants race against time to build stunning websites. Show off your front-end and back-end skills in this ultimate coding showdown!",
     register:
       "https://docs.google.com/forms/d/1RDIJMEduDZEVJwh1ywsqls4wwMUT05rvbNsccvImhiA/viewform",
     contact: [

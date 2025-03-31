@@ -1,10 +1,12 @@
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { navLinks } from "../../data/navLinks";
-import EventLogo from "/logo_.svg";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
+
+
   return (
     <footer className="bg-[#00171f] text-white xl:px-10 py-5 px-5">
       <div className="border-white/80 border-b-2">
@@ -24,7 +26,7 @@ const Footer = () => {
             ))}
           </div>
           <div className="py-2">
-            <h1>Contact us</h1>
+            <h1>Follow Us</h1>
             <div className="flex text-3xl py-3 gap-3">
               <Link
                 className="hover:text-[#13D0F4]"
@@ -39,6 +41,20 @@ const Footer = () => {
                 target="_blank_"
               >
                 <FaLinkedin />
+              </Link>
+              <Link
+                className="hover:text-[#13D0F4]"
+                to={"https://x.com/cmritilluminate"}
+                target="_blank_"
+              >
+                <FaXTwitter/>
+              </Link>
+              <Link
+                className="hover:text-[#13D0F4]"
+                to={"https://www.youtube.com/@IlluminateCmrit"}
+                target="_blank_"
+              >
+                <FaYoutube/>
               </Link>
             </div>
           </div>
