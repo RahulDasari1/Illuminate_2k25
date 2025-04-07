@@ -22,8 +22,10 @@ html,body{
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shiny 3s linear infinite;
-  }
+}
+.text-animation{
+  animation: shiny 3s linear infinite;
+}
 
   @keyframes shiny {
     0% {

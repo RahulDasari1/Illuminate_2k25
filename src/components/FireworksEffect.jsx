@@ -38,7 +38,7 @@ const FireworksEffect = ({ onComplete }) => {
     };
   }, [onComplete]);
 
-  return <div ref={containerRef} style={{ position: "absolute", width: "99vw", height: "100vh", top: 0, left: 0, zIndex: 1000 }} />;
+  return <div ref={containerRef} style={{ position: "absolute", width: "99vw", height: "100vh", top: 0, left: 0, zIndex: 900 }} />;
 };
 
 export default FireworksEffect;

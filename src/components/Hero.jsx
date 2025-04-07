@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
         <div className="text-center text-5xl xl:text-8xl font-semibold">
           {timeLeft > 0 ? (
-            <h1 className="shiny-text">{`${days} : ${hours} : ${minutes} : ${seconds}`}</h1>
+            <h1 className="shiny-text text-animation">{`${days} : ${hours} : ${minutes} : ${seconds}`}</h1>
           ) : (
             <h1 className="shiny-text">00 : 00 : 00 : 00</h1>
           )}
